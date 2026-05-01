@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+</head>
+<body>
+    <h2>Verificador de Números</h2>
+    
+    <label for="numeroInput">Ingresa un número:</label>
+    <input type="number" id="numeroInput" placeholder="Ej: 5">
+    
+    <button onclick="verificarParidad()">Verificar</button>
+
+    <h3 id="resultado"></h3>
+
+    <script>function verificarParidad() {
+
+            const input = document.getElementById("numeroInput");
+            const numero = parseInt(input.value);
+            const display = document.getElementById("resultado");
+
+            if (isNaN(numero)) {
+                display.innerText = "Por favor, escribe un número válido.";
+                return;
+            }
+
+            if (numero % 2 == 0) {
+                display.innerText = "El número " + numero + " es PAR.";
+                display.style.color = "blue";
+            } else {
+                display.innerText = "El número " + numero + " es IMPAR.";
+                display.style.color = "red";
+            }
+        }</script>
+</body>
+</html>
