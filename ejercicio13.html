@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio13</title>
+</head>
+<body>
+<script>
+    let cantnumero = parseInt(prompt("Ingrese la cantidad de números para el arreglo"));
+    let x = 0;
+    let numeros = [];
+    while (x < cantnumero) {
+         let numero = parseInt(prompt("Ingrese un número"));
+         numeros.push(numero);
+          x++;
+        }
+    const mostrarArreglo = (arreglo) => {
+        arreglo.forEach(element => {
+        document.write(`Un número ingresado es: ${element}<br>`);
+    });
+};
+mostrarArreglo(numeros);
+</script>
+</body>
+</html>

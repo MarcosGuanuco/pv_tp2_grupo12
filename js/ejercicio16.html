@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+     <script>
+        function sumarRango(inicial, final) {
+            let suma = 0;
+            for (let i = inicial; i <= final; i++) {
+                suma += i;
+            }
+            return suma;
+        }
+        let num1 = parseInt(prompt("Ingresa el número inicial:"));
+        let num2 = parseInt(prompt("Ingresa el número final:"));
+        if (isNaN(num1) || isNaN(num2)) {
+            document.write("<h2>Error: Debes ingresar números válidos.</h2>");
+        } else if (num1 > num2) {
+            document.write("<h2>Error: El número inicial debe ser menor o igual al final.</h2>");
+        } else {
+            let resultado = sumarRango(num1, num2);
+            document.write("<h2>Resultado de la suma:</h2>");
+            document.write("<p>La suma de los números entre " + num1 + " y " + num2 + " es: <b>" + resultado + "</b></p>");
+        }
+    </script>
+</body>
+</html>

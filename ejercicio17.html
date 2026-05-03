@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio17</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Escriba algo: ");
+        const contarLetraA = (string) => {
+            let cont=0;
+            for (let i = 0; i < string.length; i++) {
+                if (string[i] == "a" || string[i] == "A") {
+                    cont++;
+                }
+            }
+            return cont;
+        };
+        document.write(`La cantidad de letras "a" que hay en el texto es: ${contarLetraA(string)}`);
+    </script>
+</body>
+</html>

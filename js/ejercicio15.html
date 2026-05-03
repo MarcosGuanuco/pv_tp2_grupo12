@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <h1>Verificador de Meses</h1>
+    <script>
+        const meses = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+        const retornarMes = (num) => {
+            if (num >= 1 && num <= 12) {
+                return meses[num - 1];
+            } else {
+                return "El número ingresado no es un mes.";
+            }
+        };
+        const numero = Number(prompt("Ingresa un número:"));
+        const resultado = retornarMes(numero);
+        document.write(`<p>Resultado: ${resultado}</p>`);
+    </script>
+</body>
+</html>
