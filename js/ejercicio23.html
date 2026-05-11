@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container{
+            background: rgb(201, 237, 223);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            width: 250px;
+            border: 5px solid #1100ff;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input:focus{
+            border-color: #007bff;
+        }
+        #visor{
+            margin-top: 20px;
+            padding: 15px;
+            min-width: 200px;
+            border-radius: 8px;
+            border: 5px solid #7f7d7da2;
+            transition: background-color 0.5s ease;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="entrada" placeholder="Escrbo algo aqui...">
+        <p id="visor">Esperando texto...</p>
+    </div>
+
+    <script type="module" src="ejercicio23.js"></script>
+</body>
+</html>
