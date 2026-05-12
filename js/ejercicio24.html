@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .card{
+            background: white;
+            padding: 2rem;
+            border: 5px solid black;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .radio-label{
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        .result-container{
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>¿Cual es tu lenguaje favorito?</h2>
+        <form action="" id="radioForm">
+            <label for="" class="radio-label">
+                <input type="radio" name="lenguaje" value="javaScript">javaScript
+            </label>
+            <label for="" class="radio-label">
+                <input type="radio" name="lenguaje" value="Python">Python
+            </label>
+            <label for="" class="radio-label">
+                <input type="radio" name="lenguaje" value="C++">C++
+            </label>
+        </form>
+        <div class="result-container">
+            seleccionaste: <span id="resultado">Ninguno</span>
+        </div>
+    </div>
+
+
+    <script type="module" src="ejercicio24.js"></script>
+</body>
+</html>
