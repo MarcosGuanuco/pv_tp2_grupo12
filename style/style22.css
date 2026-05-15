@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #b3b6da;
+}
+
+h2 {
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 15px;
+  font-weight: bold;
+  color: blue;
+}
